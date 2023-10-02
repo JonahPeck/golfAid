@@ -42,16 +42,16 @@ func main() {
 		club = "Driver"
 	}
 	// fmt.Println("You should hit your", club)
-	fmt.Println("How is the lie?")
-	fmt.Println("Responses can be: tight, flyer, jumpy, uphill, downhill, below feet, above feet, plugged, burried or good")
+	fmt.Println("How is the lie? (if you are teeing off simply respond with 'good' for a reminder of the fundamentals of a proper swing)")
+	fmt.Println("Responses can be: tight, flier, jumpy, uphill, downhill, below feet, above feet, plugged, burried or good")
 	fmt.Scanln(&lie)
 
 	if lie == "tight" {
-		lieSuggestion = "tight"
+		lieSuggestion = "Focus on hitting down on the ball and focus on getting contact with the ball first then making a small divot upon followthrough"
 	} else if lie == "flyer" || lie == "jumpy" {
-		lieSuggestion = "flyer or jumpy"
+		lieSuggestion = "To counteract the 'flier' take less club, choke down, and make a three-quarter swing."
 	} else if lie == "uphill" {
-		lieSuggestion = "uphill"
+		lieSuggestion = "To hit an uphill lie, take more club than you normally would (8 iron instead of 9 iron). Aim right of the target as the ball tends to travel to the left. Don't plan for much roll as the higher trajectory will change that. Place the clubhead behind the ball and match your shoulders with the slope of the lie. Swing with the slope of the lie."
 	} else if lie == "downhill" {
 		lieSuggestion = "downhill"
 	} else if lie == "below feet" {
