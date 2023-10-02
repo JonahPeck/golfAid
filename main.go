@@ -8,9 +8,11 @@ func main() {
 	fmt.Println("What is the Yardage?")
 	var yardage int
 	var club string
+	// var hazards string
+	var lie string
+	var lieSuggestion string
 
 	fmt.Scanln(&yardage)
-	// fmt.Println("The yardage is ", yardage)
 
 	if yardage < 30 {
 		club = "60°"
@@ -39,8 +41,32 @@ func main() {
 	} else {
 		club = "Driver"
 	}
-	fmt.Println("You should hit your", club)
+	// fmt.Println("You should hit your", club)
+	fmt.Println("How is the lie?")
+	fmt.Println("Responses can be: tight, flyer, jumpy, uphill, downhill, below feet, above feet, plugged, burried or good")
+	fmt.Scanln(&lie)
+
+	if lie == "tight" {
+		lieSuggestion = "tight"
+	} else if lie == "flyer" || lie == "jumpy" {
+		lieSuggestion = "flyer or jumpy"
+	} else if lie == "uphill" {
+		lieSuggestion = "uphill"
+	} else if lie == "downhill" {
+		lieSuggestion = "downhill"
+	} else if lie == "below feet" {
+		lieSuggestion = "below feet"
+	} else if lie == "above feet" {
+		lieSuggestion = "above feet"
+	} else if lie == "plugged" || lie == "burried" {
+		lieSuggestion = "plugged or burried"
+	} else if lie == "good" {
+		lieSuggestion = "good"
+	} else {
+		fmt.Println("Please select a lie that is listed: ")
+	}
 
 	//what hazards are ahead, what lie is it in, how is your confidence right now
-
+	fmt.Println("Based on your Yardage, we suggest you hit your", club)
+	fmt.Println(lieSuggestion)
 }
