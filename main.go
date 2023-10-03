@@ -53,7 +53,7 @@ func main() {
 	} else if lie == "uphill" {
 		lieSuggestion = "To hit an uphill lie, take more club than you normally would (8 iron instead of 9 iron). Aim right of the target as the ball tends to travel to the left. Don't plan for much roll as the higher trajectory will change that. Place the clubhead behind the ball and match your shoulders with the slope of the lie. Swing with the slope of the lie."
 	} else if lie == "downhill" {
-		lieSuggestion = "downhill"
+		lieSuggestion = "To hit a downhill lie,"
 	} else if lie == "below feet" {
 		lieSuggestion = "below feet"
 	} else if lie == "above feet" {
