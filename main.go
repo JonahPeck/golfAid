@@ -57,7 +57,7 @@ func main() {
 	} else if lie == "below feet" {
 		lieSuggestion = "below feet"
 	} else if lie == "above feet" {
-		lieSuggestion = "above feet"
+		lieSuggestion = "above feet above feet above feet"
 	} else if lie == "plugged" || lie == "burried" {
 		lieSuggestion = "plugged or burried"
 	} else if lie == "good" {
