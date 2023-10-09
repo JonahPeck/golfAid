@@ -61,7 +61,7 @@ func main() {
 	} else if lie == "plugged" || lie == "burried" {
 		lieSuggestion = "plugged or burried plugged or burried plugged or burried"
 	} else if lie == "good" {
-		lieSuggestion = "good good good"
+		lieSuggestion = "good good good good"
 	} else {
 		fmt.Println("Please select a lie that is listed: ")
 	}
